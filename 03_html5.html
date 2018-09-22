@@ -1,0 +1,1600 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  width: 45em;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 30px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>03_html5</title></head><body><article class="markdown-body"><h1 id="chapter-2-html"><a name="user-content-chapter-2-html" href="#chapter-2-html" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>CHAPTER 2: HTML</h1>
+<p>In this chapter &hellip;</p>
+<h2 id="what-is-html"><a name="user-content-what-is-html" href="#what-is-html" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>What is HTML?</h2>
+<p>Hypertext Markup Language (HTML) is a markup language with a <em>specific syntax</em> used to describe how a web browser (the client) should display a web page and its contents. The contents of a web page which may include text, images, audio, and videos are <em>each</em> displayed using  pre-defined <strong>HTML elements</strong>. An HTML element describes the type of content (text, audio, video, etc.) to the browser. Each element is made-up of an <strong>opening tag</strong> and a <strong>closing tag</strong>. The structure of a single HTML element is as follows;</p>
+<pre><code class="html">&lt;TAGNAME&gt; CONTENT &lt;/TAGNAME&gt;
+</code></pre>
+
+<p>The opening tag marks the beginning of the content to be displayed and the closing tag marks the end. For example, a paragraph of text on a web page will be represented with a <em>paragraph element</em> as follows;</p>
+<pre><code class="html">&lt;p&gt;Hello, this is a paragraph of text.&lt;/p&gt;
+</code></pre>
+
+<p>As you can see above, the paragraph element has an opening tag (<code>&lt;p&gt;</code>) to mark the start of the paragraph and a closing tag (<code>&lt;/p&gt;</code>) to mark the end. The opening tag is prefixed with a less-than symbol (<code>&lt;"</code>) and suffixed with a greater-than symbol (<code>"&gt;</code>) which both wrap around a <code>"p"</code> (the tag name). The closing tag is similar to the opening tag except it has a forward slash symbol (<code>"/"</code>) immediately after it&rsquo;s less-than symbol which identifies it as a closing tag. The content of the paragraph element (in this case <code>"Hello, this is a paragraph of text."</code>) is then be placed within the opening and closing tags. </p>
+<p>The same pattern applies to all other HTML elements. However, there are some few cases where some HTML elements are self-enclosing (only uses an opening tag without any closing tag). Those exceptions will be discussed in subsequent section of this chapter.</p>
+<h2 id="creating-an-html-document"><a name="user-content-creating-an-html-document" href="#creating-an-html-document" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Creating an HTML document</h2>
+<p>An <em>HTML document</em> is any file which contains HTML markup that specify how the various elements (text, images, audio, video, etc.) on a web page should be displayed (rendered) in a web browser. An HTML file has a <code>".html"</code> extension which is recognised by the web browser as web page. </p>
+<p>To create an HTML document, open your text editor (Atom), create a new file and save it as <code>"index.html"</code> (notice the <code>".html"</code> extension). </p>
+<blockquote>
+<blockquote>
+<p><img alt="Diagram of saving document" src="" /><br />
+Creating an HTML document</p>
+</blockquote>
+</blockquote>
+<p>After creating and saving the new HTNL document, type the following markup exactly as seen below into the file in your text editor;</p>
+<p><pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;title&gt;My web application&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p&gt;Hello, this is a paragraph of text.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><br />
+The first line of the markup (<code>&lt;!DOCTYPE html&gt;</code>) is called the <strong>Doctype Declaration</strong> . A doctype declaration is a statement which tells the browser the version of HTML being used. In our case, we are using HTML version 5 (HTML5) which is the latest version as discussed in <strong>Chapter 1</strong>. The previous versions of doctype declaration are not discussed in this book and it is recommended to use HTML5 which is an improvement over previous versions.</p>
+<blockquote>
+<p><strong>NOTE</strong>: From this point onwards, HTML elements will be represented by their <strong>tag names</strong>. Therefore, whenever you come across the use a tag name like <code>&lt;p&gt;</code> in any statement, you should know that it refers to its HTML element. </p>
+</blockquote>
+<p>Right after the doctype declaration is an  <code>&lt;html&gt;</code> element which wraps around all other elements in the document. The <code>&lt;html&gt;</code> element instructs the web browser to render everything within it as HTML markup. It has a <code>'lang="en"'</code>attribute, placed inside its opening tag,  which tells the browser to display the contents of the web page in the English language (HTML attributes will be discussed later in this book). It also contain two <strong>child elements</strong>: the <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> elements, each of which contain their own child elements. </p>
+<blockquote>
+<p><strong>Child elements:</strong> Any HTML elements which is placed within another element is the child of the outer element. The outer element becomes the parent element.</p>
+</blockquote>
+<p>The <code>&lt;head&gt;</code> element is the first child of the <code>&lt;html&gt;</code> element. In the example above, it contains a single <code>&lt;title&gt;</code> element which specifies the title of the page. The content of the <code>&lt;title&gt;</code> elements is the text <code>"My  web application"</code> which will be displayed at the top of the browser window. The <code>&lt;head&gt;</code> element may also contains other child elements as well. Most other child elements in <code>&lt;head&gt;</code> are meant to instruct the browser on how to render the page, therefore their contents are not visible in the browser.</p>
+<p>The <code>&lt;body&gt;</code> element which is next to the <code>&lt;head&gt;</code> element contains the main contents of the web document. In the example above, the <code>&lt;body&gt;</code> element contains a single <code>&lt;p&gt;</code> child element which contains the text <code>"Hello, this is a paragraph of text."</code>. This text will be displayed when the document is viewed in a web browser.</p>
+<p>To view this document, save it to your computer and open it with your web browser. If you typed everything correctly, it should look like the image shown below;</p>
+<p><img alt="A simple sample web page" src="/home/aberba/workspace/writings/learn-web-designing/images/html/demo-page.png" /><br />
+A preview of our sample web page</p>
+<blockquote>
+<p><strong>NOTE:</strong> The browser does not display the tags themselves but only their content since the tags are only meant to specify the type of content, as well as, the beginning and end of the content.</p>
+</blockquote>
+<p>As seen in the image above, the title of the web page (which we placed in the <code>&lt;title&gt;</code> element) should also be displayed at the top of the browser window. </p>
+<blockquote>
+<p><strong>NOTE:</strong> The position where the <strong>page title</strong> is displayed depends the type of the web browser you are using (Firefox, Chrome, IE Edge, etc.) and how is was designed.  </p>
+</blockquote>
+<h2 id="learning-the-common-html-elements"><a name="user-content-learning-the-common-html-elements" href="#learning-the-common-html-elements" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Learning the common HTML elements</h2>
+<p>As discussed in <strong>Chapter 1</strong>, web pages in a web application are made up of various HTML elements which may vary depending on the type information they display (text, images, audio, video, etc). The structure and hierarchy of an HTML document is shown below;</p>
+<blockquote>
+<p><img alt="Hierarchy is HTML elements" src="/home/aberba/workspace/writings/learn-web-designing/images" /></p>
+</blockquote>
+<p>The diagram above illustrates how HTML elements are ranked in a hierarchical order (from top to bottom). The doctype declaration is the first in every HTML document. It is followed by the <code>&lt;html&gt;</code> element which contains all other elements. Some of the commonly used HTML elements are outlined below;</p>
+<h3 id="the-html-element"><a name="user-content-the-html-element" href="#the-html-element" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The <code>&lt;html&gt;</code> element</h3>
+<p>As discussed previously, the <code>&lt;html&gt;</code> element contains all other elements on a web page, except the doctype declaration.</p>
+<blockquote>
+<h3 id="html-attributes"><a name="user-content-html-attributes" href="#html-attributes" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>HTML attributes</h3>
+<p>An HTML attribute adds more meaning and context to an HTML element. It is placed in the opening tag of an HTML element to instruct the web browser on how to display the contents of that particular element. An example of an HTML attribute is the <code>lang</code> attribute of the <code>&lt;html&gt;</code> element which has a value of <code>en</code> to indicates that all the text on the web page is written in English Language. An HTML attribute is made up of a <strong>name</strong> and <strong>value</strong> pair. In the case of the <code>&lt;html&gt;</code> element, <code>"lang"</code> is the name of the attribute and <code>"en"</code> is the value. The value of an HTML attribute is wrapped in quotes.</p>
+<p>Some attributes are <strong>global</strong> and can be used on <em>any</em> HTML element whilst others are <strong>non-global</strong> and are used on <em>specific</em> elements. Few examples of the global attributes are as follows;</p>
+<table>
+<thead>
+<tr>
+<th>Attribute Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lang</td>
+<td>Specifies the language of the element&rsquo;s content</td>
+</tr>
+<tr>
+<td>title</td>
+<td>Used to add extra information about an element</td>
+</tr>
+<tr>
+<td>class</td>
+<td>Specifies one or more class names for an element. This attribute is discussed Chapter 3.</td>
+</tr>
+<tr>
+<td>id</td>
+<td>Specifies a unique id for an element. This is also discussed in Chapter 3.</td>
+</tr>
+</tbody>
+</table>
+<p>You can further research on the other global attribute. Non-global attributes are discussed in subsequent sections in this Chapter.</p>
+</blockquote>
+<p>The <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> elements are the only two children of the <code>&lt;html&gt;</code> element and are discussed below;</p>
+<h3 id="the-head-element"><a name="user-content-the-head-element" href="#the-head-element" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The <code>&lt;head&gt;</code> element</h3>
+<p>The <code>&lt;head&gt;</code> element is the first child of the <code>&lt;html&gt;</code> element. It may also contain child elements which provide more information about the web document and instructs the browser on how to render it. These information may include the page title, character encoding, description of the page content, viewport size and many more. These topics will be discussed later in this book. The <code>&lt;title&gt;</code> element which specify the title of the web page is discussed below. </p>
+<h3 id="the-title-element"><a name="user-content-the-title-element" href="#the-title-element" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The <code>&lt;title&gt;</code> element</h3>
+<p>The <code>&lt;title&gt;</code> element is a child of the <code>&lt;head&gt;</code> element. It specifies the title of a web page as it&rsquo;s name implies. The content is any text which will be displayed at the top of the browser window as the page title. It is best to give every web page a <em>unique</em> title to distinguish it from the other pages.</p>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+      &lt;title&gt;Another web application&lt;/title&gt;
+  &lt;/head&gt;
+
+&lt;/html&gt;
+</code></pre>
+
+<h3 id="the-body-element"><a name="user-content-the-body-element" href="#the-body-element" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The <code>&lt;body&gt;</code> element</h3>
+<p>The <code>&lt;body&gt;</code> element is next after the <code>&lt;head&gt;</code>. As discussed previously, all information meant to be visible in the browser should be placed in the <code>&lt;body&gt;</code> element. Contents such as text, images, audio, video, etc. are all placed within the <code>&lt;body&gt;</code> element.</p>
+<blockquote>
+<p><strong>NOTE</strong>: HTML elements discussed henceforth <em>may</em> have HTML markup below it to demonstrate how it is used. Markup demonstrated may ignore other elements and only show the specific element under discussion for simplicity sake. You are expected to type the markup within the <code>&lt;body&gt;</code> element of a complete HTML document to test it in your web browser. A template markup is demonstrated below:</p>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+      &lt;title&gt;My web application&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+      ... All demonstrated HTML markup should be placed here for testing ...
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+</blockquote>
+<p>The list of some commonly used HTML elements which are placed within the <code>&lt;body&gt;</code> element are discussed below with demonstrations.</p>
+<h3 id="the-p-element"><a name="user-content-the-p-element" href="#the-p-element" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The <code>&lt;p&gt;</code> element</h3>
+<p>The <code>&lt;p&gt;</code>  element represents a paragraph of text. The text content is placed within opening and closing tags. A web page may have one or more paragraphs of text as shown below;</p>
+<pre><code class="html">&lt;p&gt;I am a paragraph of text.&lt;/p&gt;
+&lt;p&gt;I am another paragraph of text&lt;/p&gt;
+</code></pre>
+
+<h3 id="the-comment-element"><a name="user-content-the-comment-element" href="#the-comment-element" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The comment element</h3>
+<p>The comment element is used to markup a piece of text as a comment. Comments are not be rendered by the web browser but are useful for documenting HTML markup for the developer to know what the code does. The comment element is unique in that, it begins with a <code>&lt;!--"</code> and ends with a <code>"--&gt;</code> as show below:</p>
+<pre><code class="html">&lt;!-- This comment marks the first paragraph --&gt;
+&lt;p&gt;I am a paragraph of text.&lt;/p&gt;
+
+&lt;!-- This comment marks the second paragraph --&gt;
+&lt;p&gt;I am another paragraph of text&lt;/p&gt;
+</code></pre>
+
+<p>Comments may also span across multiple lines:</p>
+<pre><code class="html">&lt;!-- This is a very long comment which occupy 
+multiple lines in a document. It is appropriate 
+to not make comments as short as possible and 
+till contain the necessary information --&gt;
+</code></pre>
+
+<p>Simple HTML markup usually do not need comments since they are easy to understand. However, comments are needed in cases where the web document contains a more complex of markup to explain things to other developers.  </p>
+<h3 id="the-heading-elements"><a name="user-content-the-heading-elements" href="#the-heading-elements" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The Heading elements</h3>
+<p>There are six different types of HTML heading elements used to markup certain piece of text as headings. The heading elements rank from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>. The <code>&lt;h1&gt;</code> is the highest in the rank representing the most important heading whilst the <code>&lt;h6&gt;</code> element is the lowest in rank and least important. The use of heading elements is as follows;</p>
+<pre><code class="html">&lt;h1&gt;This is heading h1&lt;/h1&gt;
+&lt;h2&gt;This is heading h2&lt;/h2&gt;
+&lt;h3&gt;This is heading h3&lt;/h3&gt;
+&lt;h4&gt;This is heading h4&lt;/h4&gt;
+&lt;h5&gt;This is heading h5&lt;/h5&gt;
+&lt;h6&gt;This is heading h6&lt;/h6&gt;
+</code></pre>
+
+<p>The sizes of the text in the heading elements decrease from the highest to the lowest rank. As shown below;</p>
+<p><img alt="Heading elements with decreasing size" src="/home/aberba/workspace/writings/learn-web-designing/images/headings.png" /></p>
+<p>These varying sizes of heading elements can be used to represent the main headings and sub-headings of a piece of text on a web page. An example of using heading elements in a paragraph of text is shown below;</p>
+<pre><code class="html">&lt;h1&gt;This is the main heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph of text under the main heading&lt;/p&gt;
+
+&lt;h2&gt;This is sub-heading&lt;/h2&gt;
+&lt;p&gt;This is a paragraph of text under the sub-heading&lt;/p&gt;
+
+&lt;h3&gt;This is sub sub-heading h3&lt;/h3&gt;
+&lt;p&gt;This is a paragraph of text under the sub sub-heading&lt;/p&gt;
+</code></pre>
+
+<p>The document should look similar to the image below;</p>
+<p><img alt="Using heading elements to markup paragraphs of text" src="/home/aberba/workspace/writings/learn-web-designing/images/heading-usage.png" /></p>
+<h3 id="the-em-element"><a name="user-content-the-em-element" href="#the-em-element" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The <code>&lt;em&gt;</code> element</h3>
+<p>This element is used for emphasising a peace of text. An emphasised text will be displayed italics.</p>
+<pre><code class="html">&lt;p&gt;I am &lt;em&gt;really&lt;/em&gt; excited about HTML.&lt;/p&gt;
+</code></pre>
+
+<h3 id="the-strong-element"><a name="user-content-the-strong-element" href="#the-strong-element" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The <code>&lt;strong&gt;</code> element</h3>
+<p>This element is used to mark a piece of text as important. Any piece of text placed within the <code>&lt;strong&gt;</code> element will usually be displayed in bold.</p>
+<pre><code class="html"> &lt;p&gt;The meeting will start at &lt;strong&gt;12:00pm&lt;/strong&gt; prompt.&lt;/p&gt;
+</code></pre>
+
+<blockquote>
+<h3 id="html-elements-with-no-closing-tag"><a name="user-content-html-elements-with-no-closing-tag" href="#html-elements-with-no-closing-tag" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>HTML elements with no closing tag</h3>
+<p>As mention <em>earlier (link)</em>, some elements do not have closing tags and are self-enclosing. Henceforth, you may encounter such elements.</p>
+</blockquote>
+<h3 id="the-br-element"><a name="user-content-the-br-element" href="#the-br-element" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The <code>&lt;br&gt;</code> element</h3>
+<p>The <strong>line break</strong> element is used to force an element onto a new line. The <code>&lt;br&gt;</code> is one example of elements with a self-enclosing tag. Any element that come after a <code>&lt;br&gt;</code> element will be displayed in a line below:</p>
+<pre><code class="html">   &lt;!-- A paragraph with no line break --&gt;
+  &lt;p&gt;Hello, this is a paragraph of text.&lt;/p&gt;
+
+  &lt;!-- A paragraph with a line break --&gt;
+  &lt;p&gt;Hello, this is a &lt;br&gt; paragraph of text.&lt;/p&gt;
+</code></pre>
+
+<p>The following should be displayed as shown below:</p>
+<p><img alt="Hyperlinks with &lt;br&gt; vs Hyperlinks without &lt;br&gt;" src="/home/aberba/workspace/writings/learn-web-designing/images/line-break.png" /><br />
+Paragraph with <code>&lt;br&gt;</code> vs Paragraph without <code>&lt;br&gt;</code>.</p>
+<h3 id="the-hr-element"><a name="user-content-the-hr-element" href="#the-hr-element" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The <code>&lt;hr&gt;</code> element</h3>
+<p>This element displayed a horizontal rule (line) which defines a thematic break in a web page. This is particularly useful for representing a shift of topic in a piece of writing. The <code>&lt;hr&gt;</code> element is self-enclosing.</p>
+<pre><code class="html">   &lt;h1&gt;About Cars&lt;/h1&gt;
+   &lt;p&gt;Cars are very unique in their ...&lt;/p&gt;
+
+   &lt;hr&gt;
+
+   &lt;h1&gt;About bikes&lt;/h1&gt;
+   &lt;p&gt;Bikes are convenient for travelling ...&lt;/p&gt;
+</code></pre>
+
+<h3 id="the-a-element"><a name="user-content-the-a-element" href="#the-a-element" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The <code>&lt;a&gt;</code> element</h3>
+<p>This element is used to represent a hyperlink. A hyperlink has an <code>"href"</code> attribute and accepts a Uniform Resource Locator (URL) as its value. A URL is &hellip; The URL value of an <code>href</code> attribute may point to a section of the same web page, another web page or a different website.</p>
+<pre><code class="html">&lt;a href=&quot;https://google.com&quot;&gt;Go to Google Search&lt;/a&gt;
+</code></pre>
+
+<p>A hyperlink is usually displayed in blue colours. The URL set as its value is not displayed but when clicked, your web browser will be directed to that URL. Only the text played between the tags is displayed in blue as shown below:</p>
+<p><img alt="A hyperlink to &quot;https://google.com&quot;" src="/home/aberba/workspace/writings/learn-web-designing/images/hyperlink.png" /><br />
+A hyperlink to &ldquo;<a href="https://google.com">https://google.com</a>&ldquo;</p>
+<p>A hyperlink may also be link to another section of the same web page. The element at the section where the link must point to should be given an <code>"id"</code> attribute. The value of the <code>"id"</code> attribute should be set as the value of the hyperlink&rsquo;s &ldquo;href&rdquo; attribute prefixed with a <code>"#"</code>:</p>
+<pre><code class="html">&lt;!-- Two hyperlinks with no &lt;br&gt; between them --&gt;
+&lt;a href=&quot;#section-one&quot;&gt;Go to Section One&lt;/a&gt;
+&lt;a href=&quot;#section-two&quot;&gt;Go to Section Two&lt;/a&gt;
+
+&lt;!-- Section One --&gt;
+&lt;p id=&quot;section-one&quot;&gt;This is section one with&lt;/p&gt;
+
+&lt;p id=&quot;section-two&quot;&gt;This is section two with&lt;/p&gt;
+</code></pre>
+
+<p>When you test the example above, a click on the <code>Go to Section One</code> hyperlink should direct your browser&rsquo;s view to the element with an <code>id</code> attribute of <code>section-one</code>. Same thing applies to the <code>Go to Section Two</code> hyperlink.</p>
+<blockquote>
+<h3 id="relative-and-absolute-url-paths"><a name="user-content-relative-and-absolute-url-paths" href="#relative-and-absolute-url-paths" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Relative and absolute URL paths</h3>
+<p>A URL of a hyperlink may either have a relative or an absolute path. A relative path &hellip;</p>
+</blockquote>
+<h3 id="the-multimedia-elements"><a name="user-content-the-multimedia-elements" href="#the-multimedia-elements" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The multimedia elements</h3>
+<p>In this modern era, multimedia content such images, audio and video form a major part of information we consume. HTML specification provides elements form displaying these type of content on a web page.</p>
+<h3 id="the-img-element"><a name="user-content-the-img-element" href="#the-img-element" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The <code>&lt;img&gt;</code> element</h3>
+<p>The img element is used to display images on a web page. It supports an <code>src</code> attribute for linking the image to be displayed in the element. The value of the <code>src</code> attribute is the URL to the image file to be displayed. The <code>`&lt;img&gt;</code> element also support an <code>alt</code> attribute which accepts a text as its value. The text <strong>describes what is found in the image</strong>. This text serves as an alternative to be displayed in-case the image fails to load and its very helpful for <strong>screen readers</strong> used by people with impaired eyesight. It is <em>highly recommended</em> to specify an alternative text for every image as a fallback measure to inform users when an image fails to load. Failure may be attributed to a server error or an invalid URL.</p>
+<blockquote>
+<p>A <strong>screen reader</strong> is a softwares used by people who have impaired eyesight to reads text found computer screen for them to listen as an audio (voice).</p>
+</blockquote>
+<pre><code class="html">&lt;img src=&quot;https://example.com/photo.jpg&quot; alt=&quot;John sitting on a couch.&quot;&gt;
+</code></pre>
+
+<p>Images available locally can also be linked using an <em>absolute URL</em>. For example, an image file located in the same folder as when you have stored the HTML document can be linked be specify the absolute path as shown below:</p>
+<p><pre><code class="html">&lt;img src=&quot;photo.jpg&quot; alt=&quot;A photo of John sitting on a couch&quot;&gt;
+</code></pre><br />
+It is recommended to create a new folder where all images are placed separately. For example, a folder named <code>images</code> can be created and placed in the same location as the HTML document. Supposing the <code>photo.jpg</code> file is moved the the images folder, the absolute path to it, <code>images/photo.jpg</code>, can then be specified as the value of the <code>src</code> attribute.</p>
+<pre><code class="html">&lt;img src=&quot;images/photo.jpg&quot; alt=&quot;A photo of John sitting on a couch.&quot;&gt;
+</code></pre>
+
+<blockquote>
+<h3 id="web-image-formats"><a name="user-content-web-image-formats" href="#web-image-formats" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Web image formats</h3>
+<p>All image file names may either end with a <code>.jpg</code>, <code>.png</code>, <code>.gif</code>, etc. This is called the <strong>image extension</strong>. An image extension indicates the format of a particular image. There are several images formats available but not all of them are supported for displaying on a web page. Some of the commonly supported image formats are illustrated below:</p>
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>Extension</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(PNG)</td>
+<td>.png</td>
+<td>Used</td>
+</tr>
+<tr>
+<td>(JPG)</td>
+<td>.jpg</td>
+<td>used</td>
+</tr>
+<tr>
+<td>(JPEG)</td>
+<td>.jpeg</td>
+<td>used</td>
+</tr>
+<tr>
+<td>(GIF)</td>
+<td>.gif</td>
+<td>used for animated images</td>
+</tr>
+<tr>
+<td>(WEBP)</td>
+<td>.webp</td>
+<td>used</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<h3 id="the-picture-element"><a name="user-content-the-picture-element" href="#the-picture-element" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The <code>&lt;picture&gt;</code> element</h3>
+<p><strong>REFERENCE?? FIX writeup</strong></p>
+<h3 id="the-figure-element"><a name="user-content-the-figure-element" href="#the-figure-element" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The <code>&lt;figure&gt;</code> element</h3>
+<p>This element is used to mark-up a piece of content as a whole (self-containing) — like illustrations, diagrams, photos, code listings, etc. </p>
+<p>A <code>&lt;figure&gt;</code> element may be used to wrap an a group of images as belonging together. The <code>&lt;img&gt;</code> element then becomes a child of the <code>&lt;figure&gt;</code> element:</p>
+<p><strong>FIX: ADD <picture> in code below ??</strong></p>
+<pre><code class="html">&lt;figure&gt;
+  &lt;img src=&quot;photo.jpg&quot; alt=&quot;John sitting on a couch.&quot;&gt;
+&lt;/figure&gt;
+</code></pre>
+
+<p>It is recommended to place all <code>&lt;img&gt;</code> elements and their captions in a <code>&lt;figure&gt;</code> elements to mark the as belonging together.</p>
+<h3 id="the-figcaption-element"><a name="user-content-the-figcaption-element" href="#the-figcaption-element" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The <code>&lt;figcaption&gt;</code> element</h3>
+<p>This element is used to add a caption to a <code>&lt;figure&gt;</code> element. A <code>&lt;figcaption&gt;</code> accepts a piece of text and its placed within <code>&lt;figure&gt;</code> element to serve as a label, provide information about the figure&rsquo;s purpose, intellectual owner, where a photo in a figure was taken, etc. </p>
+<pre><code class="html">&lt;figure&gt;
+  &lt;img src=&quot;photo.jpg&quot; alt=&quot;John sitting on a couch.&quot;&gt;
+  &lt;figcaption&gt;Figure 1: John Asante, my step brother&lt;/figcaption&gt;
+&lt;/figure&gt;
+</code></pre>
+
+<p>The text in a <code>&lt;figcaption&gt;</code> element is not meant to describe <em>what is happening an image</em> (visual content) — which is the role of the <code>alt</code> attribute of an <code>&lt;img&gt;</code> element.</p>
+<h3 id="the-audio-element"><a name="user-content-the-audio-element" href="#the-audio-element" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The <code>&lt;audio&gt;</code> element</h3>
+<h3 id="the-video-element"><a name="user-content-the-video-element" href="#the-video-element" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The <code>&lt;video&gt;</code> element</h3>
+<p>.................................<br />
+....................................<br />
+................................... </p>
+<h3 id="the-list-elements"><a name="user-content-the-list-elements" href="#the-list-elements" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The list elements</h3>
+<p>List elements are used to markup content in the form of a list. There are different list elements which may either be <code>&lt;ol&gt;</code>, <code>&lt;ul&gt;</code> or <code>&lt;dl&gt;</code>. </p>
+<h4 id="the-ol-list-element"><a name="user-content-the-ol-list-element" href="#the-ol-list-element" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The <code>&lt;ol&gt;</code> list element</h4>
+<p>This list element is used to create an ordered list. Each item in an <code>&lt;ol&gt;</code> list is defined with a <code>&lt;li&gt;</code> child element. Ordered list are numbered starting from number <code>"1"</code> by default.</p>
+<pre><code class="html">&lt;ol&gt;
+    &lt;li&gt;List item one&lt;/li&gt;
+    &lt;li&gt;List item two&lt;/li&gt;
+    &lt;li&gt;List item three&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+
+<p>An order list support HTML attributes in addition to the global attributes for customising how the list are displayed. Some of the attributes supported by <code>&lt;ol&gt;</code> are listed in the table below.</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>start</td>
+<td>Specifies the number the list should start from a certain number</td>
+<td>any number</td>
+</tr>
+<tr>
+<td>reversed</td>
+<td>Specifies that the list should be numbered in a descending order</td>
+<td>reversed</td>
+</tr>
+<tr>
+<td>type</td>
+<td>Specifies the kind of marker to use in the list</td>
+<td>1, A, a, I, i</td>
+</tr>
+</tbody>
+</table>
+<p>The following list will be made to start numbering from <code>"3"</code> using the <code>"start"</code> attribute:</p>
+<p><pre><code class="html">&lt;ol start=&quot;3&quot;&gt;
+    &lt;li&gt;First list item&lt;/li&gt;
+    &lt;li&gt;Second list item&lt;/li&gt;
+    &lt;li&gt;Third list item&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre><br />
+We can also customize the a list to be numbered in a <em>descending order</em> using the <code>"reversed"</code> attribute.</p>
+<pre><code class="html">&lt;ol reversed=&quot;reversed&quot;&gt;
+    &lt;li&gt;First list item&lt;/li&gt;
+    &lt;li&gt;Second list item&lt;/li&gt;
+    &lt;li&gt;Third list item&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+
+<h4 id="the-ul-list-element"><a name="user-content-the-ul-list-element" href="#the-ul-list-element" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The <code>&lt;ul&gt;</code> list element</h4>
+<p>This list element is used to create an unordered list. Unordered list are bulleted by default. </p>
+<pre><code class="html">&lt;ul&gt;
+    &lt;li&gt;List item 1&lt;/li&gt;
+    &lt;li&gt;List item 2&lt;/li&gt;
+    &lt;li&gt;List item 3&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<h4 id="the-dl-list-element"><a name="user-content-the-dl-list-element" href="#the-dl-list-element" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The <code>&lt;dl&gt;</code> list element</h4>
+<p>This list element is used to create a description list. Each item in a <code>&lt;dl&gt;</code> list is a term and description pair defined using a <code>&lt;dt&gt;</code> element (the term) and a <code>&lt;dd&gt;</code> element (the description).</p>
+<pre><code class="html"> &lt;dl&gt;
+  &lt;dt&gt;Tomato&lt;/dt&gt;
+  &lt;dd&gt;A red pulpy vegetable for preparing sauce.&lt;/dd&gt;
+
+  &lt;dt&gt;Cassava&lt;/dt&gt;
+  &lt;dd&gt;A root tuber crop.&lt;/dd&gt;
+
+  &lt;dt&gt;Apple&lt;/dt&gt;
+  &lt;dd&gt;A sweet little fruit.&lt;/dd&gt;
+&lt;/dl&gt; 
+</code></pre>
+
+<h3 id="semantic-html-elements"><a name="user-content-semantic-html-elements" href="#semantic-html-elements" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Semantic HTML elements</h3>
+<p>Semantic elements are used to give meaning to a page structure. It is important for defining how the various sections of a web page are marked up. This is especially needed for Search Engines (like Google Search) and screen readers (programs used by visually impaired people for reading). The use of each  of semantic element is apparent in its name. Some of the commonly used semantic HTMl elements are outline below.</p>
+<h4 id="the-main-element"><a name="user-content-the-main-element" href="#the-main-element" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The <code>&lt;main&gt;</code> element</h4>
+<p>The element specifies the main content of a web page. The content placed inside the <code>&lt;main&gt;</code> element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, main navigation links, copyright information, site logos, and the like. </p>
+<p>Also, there should not be more than one <code>&lt;main&gt;</code> element in a document. The <main> element must <strong>NOT</strong> be a child of an <article>, <aside>, <footer>, <header>, or <nav> element which are discussed subsequently.</p>
+<h4 id="the-article-element"><a name="user-content-the-article-element" href="#the-article-element" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The <code>&lt;article&gt;</code> element</h4>
+<p>This element is used to markup a piece of content as independent from the rest of the contents on a web page. The <code>&lt;article&gt;</code> element may be used to markup a blog post, an article, comments or any other content which is less related to the other contents on a web page:</p>
+<pre><code class="html">&lt;main&gt;
+    &lt;!-- This is the main post --&gt;
+    &lt;article&gt;
+        &lt;h1&gt;My new blog post&lt;/h1&gt;
+        &lt;p&gt;Today, I want to talk about a conference I attended weekend ...&lt;/p&gt;
+    &lt;/article&gt;
+
+    &lt;!-- Comments from users are marked up below --&gt;
+    &lt;article&gt;
+        &lt;h1&gt;Comments from readers.&lt;/h1&gt;
+
+        &lt;ol&gt;
+            &lt;li&gt; &lt;strong&gt;John said:&lt;/strong&gt; Hello, I really enjoyed reading.&lt;/li&gt;
+            &lt;li&gt; &lt;strong&gt;Janet said:&lt;/strong&gt; Nice post.&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/article&gt;
+&lt;/main&gt;
+</code></pre>
+
+<h4 id="the-section-element"><a name="user-content-the-section-element" href="#the-section-element" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The <code>&lt;section&gt;</code> element</h4>
+<p>This elements is used to markup a web page into different sections. Any part of a web page may be divided into separate sections containing a specific kind of information. The <code>&lt;section&gt;</code> element is useful for dividing a document into various sections especially when there are a lot of content to deal with.</p>
+<p>Another use case for <code>&lt;section&gt;</code> is for separate the header of a web page into separate sections (logo section, main navigation section). You may also use the section element to represent each comment posted by a reader of a blog post:</p>
+<pre><code class="html">&lt;main&gt;
+    &lt;article&gt;
+        &lt;h2&gt;Comments from readers&lt;/h2&gt;
+
+        &lt;!-- first section --&gt;
+        &lt;section&gt;
+            &lt;h3&gt;Jane Doe said:&lt;/h3&gt;
+            &lt;p&gt;I really enjoy reading your blog posts.&lt;/p&gt;
+        &lt;/section&gt;
+
+        &lt;!-- second section --&gt;
+        &lt;section&gt;
+            &lt;h3&gt;Mike Okran said:&lt;/h3&gt;
+            &lt;p&gt;Nice post.&lt;/p&gt;
+        &lt;/section&gt;
+    &lt;/article&gt;
+&lt;/main&gt;
+</code></pre>
+
+<h4 id="the-header-element"><a name="user-content-the-header-element" href="#the-header-element" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The <code>&lt;header&gt;</code> element</h4>
+<p>This element is used to markup the introductory part of a content on a web page. Each web page usually have a <code>&lt;header&gt;</code> element to mark the main header (topmost part) of the page where the page logo, main title and main navigation links (main menu) are placed. It may also be used to represent the introductory content within a <code>&lt;section&gt;</code> element.</p>
+<pre><code class="html">
+    &lt;header&gt;
+        &lt;h1&gt;Welcome to my website&lt;/h1&gt;
+        &lt;img src=&quot;logo.png&quot; alt=&quot;My web application logo&quot;&gt;
+
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;My Blog&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;About Me&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+        &lt;article&gt;
+            &lt;h1&gt;Title of blog post&lt;/h1&gt;
+
+            &lt;img src=&quot;banner.png&quot;&gt;
+
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.&lt;/p&gt;
+
+        &lt;/article&gt;
+    &lt;/main&gt;
+</code></pre>
+
+<h4 id="the-nav-element"><a name="user-content-the-nav-element" href="#the-nav-element" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The <code>&lt;nav&gt;</code> element</h4>
+<p>This element is use to represent the a set of navigations links. The <code>&lt;nav&gt;</code> element can be used to markup <strong>main navigation links</strong> (usually located within the main header at the top part of a web page). It is appropriate to place individual links of a <code>&lt;nav&gt;</code> element in an unordered list (<code>&lt;ul&gt;</code>).</p>
+<pre><code class="html">    &lt;!-- header containing main navigation --&gt;
+&lt;header&gt;
+    &lt;h1&gt;Welcome to my website&lt;/h1&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#blog&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;About Me&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+
+&lt;!-- The rest of the page linked to the navigation --&gt;
+&lt;main&gt;
+    &lt;article&gt;
+        &lt;section id=&quot;top&quot;&gt;
+            &lt;h2&gt;Top Section&lt;/h2&gt;
+            &lt;p&gt;This is the top section of the page&lt;/p&gt;
+        &lt;/section&gt;
+
+        &lt;section id=&quot;top&quot;&gt;
+            &lt;h2&gt;Blog posts&lt;/h2&gt;
+            &lt;p&gt;This is the top section of the page&lt;/p&gt;
+        &lt;/section&gt;
+
+        &lt;section id=&quot;top&quot;&gt;
+            &lt;h2&gt;This is a title for this page&lt;/h2&gt;
+            &lt;p&gt;This is the top section of the page&lt;/p&gt;
+        &lt;/section&gt;
+    &lt;/article&gt;
+&lt;/main&gt;
+</code></pre>
+
+<p><img alt="Image of the main navigation link of a website" src="" /></p>
+<p>Other <strong>group of hyperlinks</strong> on different parts of a web page can also be placed inside a <code>&lt;nav&gt;</code> element (see the <code>&lt;aside&gt;</code> element below).</p>
+<h4 id="the-footer-element"><a name="user-content-the-footer-element" href="#the-footer-element" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The <code>&lt;footer&gt;</code> element</h4>
+<p>Similar to the <code>&lt;header&gt;</code> elements, the <code>&lt;footer&gt;</code> element is used to represent the ending part of a piece of content on a web page. The footer element may be used to represent the main ending part of a web page which may contain copyright information, related content and contact information of the web:</p>
+<pre><code class="html">&lt;!-- header for page with my logo --&gt;
+&lt;header&gt;
+    &lt;h1&gt;Welcome to my website&lt;/h1&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;My Blog&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/header&gt;
+
+&lt;!-- main content --&gt;
+&lt;main&gt;
+    &lt;article&gt;
+        &lt;!-- blog post section --&gt;
+        &lt;section&gt;
+            &lt;h1&gt;This is the title of my blog post.&lt;/h1&gt;
+
+            &lt;img src=&quot;banner.png&quot;&gt; &lt;!-- this is an image for my post --&gt;
+
+            &lt;p&gt;A paragraph of text for a blog post. It can be long or short depending on the writer. As a convention is writing, it is appropriate to not make paragraphs too long.&lt;/p&gt;
+
+            &lt;h2&gt;A subtitle of the post&lt;/h2&gt;
+            &lt;p&gt;Another paragraph of text under the subtitle. Just to demonstrate how various elements can be combined to lay out content on a web page.&lt;/p&gt;
+        &lt;/section&gt;
+    &lt;/article&gt;
+
+    &lt;article&gt;
+       &lt;!-- Another blog post can be placed here --&gt;
+    &lt;/article&gt;
+&lt;/main&gt;
+
+&lt;!-- Footer containing address and copyright information --&gt;
+&lt;footer&gt;
+    &lt;h3&gt;Contact Us&lt;/h3&gt;
+    &lt;p&gt;Oxford Road, Accra - Ghana&lt;/p&gt;
+
+    &lt;p&gt;Copyright Jonathan Seidu, 2016. &lt;/p&gt;
+&lt;/footer&gt;
+</code></pre>
+
+<h4 id="the-aside-element"><a name="user-content-the-aside-element" href="#the-aside-element" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The <code>&lt;aside&gt;</code> element</h4>
+<p>An &ldquo;aside&rdquo; is the section of a web which contains content <strong>aside</strong> from the content it is placed in. It usually contains group of links to other web pages aside from the main navigation. Aside are commonly placed at the leftmost or rightmost section of a web page by styling it with CSS (see Chapter 3).</p>
+<pre><code class="html">&lt;!-- header for page with my logo --&gt;
+&lt;header&gt;
+    &lt;h1&gt;Welcome to my website&lt;/h1&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;My Blog&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/header&gt;
+
+&lt;!!
+&lt;aside&gt;
+    &lt;h2&gt;Extra links&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;mavis-gallery.com&quot;&gt;My photo gallery&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;movie-gallery.com&quot;&gt;My favourite movies&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;fruits-gallery.com&quot;&gt;My favourite fruits&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;h2&gt;My social media accounts&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;facebook.com&quot;&gt;Facebook&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;twitter.com&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/aside&gt;
+
+...
+
+</code></pre>
+
+<p>Finis multimedia elements</p>
+<blockquote>
+<h2 id="key-terms"><a name="user-content-key-terms" href="#key-terms" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Key Terms</h2>
+<p><strong>Rendering</strong> <br />
+<em> <strong>Markup</strong>:<br />
+</em> File <strong>extension</strong><br />
+<em> Tag<br />
+</em> Markup</p>
+</blockquote></article></body></html>
